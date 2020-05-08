@@ -11,7 +11,11 @@ html {
 }
 
 body {
-    line-height: 1.2;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -19,9 +23,24 @@ h1 {
     font-weight: 800;
 }
 
+h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
 h3 {
     font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
     font-weight: 500;
+}
+
+p {
+    font-size: 1.25rem;
+    font-weight: normal;
 }
 
 .img-container {
@@ -185,7 +204,7 @@ section {
     line-height: 1.2;
 }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 1021px) {
     #banner {
         flex-flow: column nowrap;
     }
@@ -197,5 +216,140 @@ section {
 
     #banner div.text {
         margin: 0;
+    }
+}
+
+.left {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 60%;
+    padding: 2rem 1.5rem;
+}
+
+.left img,
+.right img {
+    width: 100%;    
+}
+
+.left div.text {
+    margin-top: 2rem;
+}
+
+.right {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 40%;
+    margin-top: 1rem;
+}
+
+.right article {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1rem;
+}
+
+.right figure {
+    width: 35%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.right div.text {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right p {
+    font-size: 1.125rem;
+}
+
+.info-lrg {
+    display: flex;
+    align-items: center;
+}
+
+.info-small {
+    display: none;
+}
+
+#info {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+
+#info h1 {
+    margin-bottom: 1.5rem;
+}
+
+#info h2 {
+    margin-bottom: 0.5rem;
+}
+
+#info a {
+    color: rgb(70, 130, 180);
+    font-size: 1.125rem;
+    margin-top: 0.5rem;
+}
+
+#info article.left p {
+    margin-bottom: 2rem;
+}
+
+#guest {
+    background-color: rgb(211, 211, 211);
+}
+
+@media only screen and (min-width:711px) and (max-width:1021px) {
+    #info {
+        flex-flow: column nowrap;
+    }
+
+    #info article.left {
+        width: 100%;
+        padding: 0;
+    }
+
+    #info article.left div.text {
+        padding: 0 1rem;
+    }
+
+    #info div.right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    #info article.left {
+        display: none;
+    }
+
+    #info div.right {
+        width: 100%;
+        margin: 0;
+    }
+
+    #info div.right article {
+        flex-flow: column nowrap;
+        margin-bottom: 2rem;
+    }
+
+    #info div.right figure {
+        width: 100%;
+        flex-shrink: 1;
+    }
+
+    .info-lrg {
+        display: none;
+    }
+
+    .info-small {
+        display: block;
+    }
+
+    #guest {
+        background-color: inherit;
+        padding-bottom: 0;
     }
 }
