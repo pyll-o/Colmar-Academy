@@ -301,7 +301,7 @@ section {
     background-color: rgb(211, 211, 211);
 }
 
-@media only screen and (min-width:711px) and (max-width:1021px) {
+@media only screen and (max-width:1021px) {
     #info {
         flex-flow: column nowrap;
     }
@@ -309,20 +309,7 @@ section {
     #info article.left {
         width: 100%;
         padding: 0;
-    }
-
-    #info article.left div.text {
-        padding: 0 1rem;
-    }
-
-    #info div.right {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 710px) {
-    #info article.left {
-        display: none;
+        margin-bottom: 2rem;
     }
 
     #info div.right {
@@ -352,4 +339,49 @@ section {
         background-color: inherit;
         padding-bottom: 0;
     }
+}
+
+@media only screen and (max-width: 710px) {
+    #info article.left {
+        display: none;
+    }
+}
+
+#learning {
+    background-color: rgb(211, 211, 211);
+    padding: 2rem 3.5rem;
+    flex-flow: column nowrap;
+}
+
+#learning h1 {
+    text-align: center;
+}
+
+#courses {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: stretch;
+}
+
+#courses article {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 2rem 1rem 0 1rem;
+    flex: 1 1 30%;
+}
+
+#courses div.text {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+#courses figure img {
+    width: 100%;
+}
+
+#courses p {
+    margin: 0.5rem 0;
 }
