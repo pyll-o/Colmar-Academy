@@ -423,5 +423,40 @@ section {
     #courses div.text {
         background-color: rgb(211, 211, 211);
     }
-    
+}
+
+#thesis {
+    flex-flow: column nowrap;
+    padding: 2rem 0;
+}
+
+#thesis h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#exhibit {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+
+.left video {
+    width: 100%;
+}
+
+.left h2 {
+    margin-bottom: 0.5rem;
+}
+
+.right h2 {
+    margin-bottom: 0.5rem;
+}
+
+#thesis div.right {
+    margin-top: 2rem;
+}
+
+.gray {
+    background-color: rgb(211, 211, 211);
 }
