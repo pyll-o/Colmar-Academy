@@ -12,6 +12,7 @@ html {
 
 body {
     line-height: 1.4;
+    background-color: rgb(240, 240, 240);
 }
 
 a {
@@ -45,6 +46,10 @@ p {
 
 .img-container {
     background-size: cover;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
 }
 
 header.large {
@@ -382,6 +387,41 @@ section {
     width: 100%;
 }
 
+#courses h2 {
+    margin-bottom: 0.5rem;
+}
+
 #courses p {
     margin: 0.5rem 0;
+}
+
+@media only screen and (max-width: 710px) {
+    #learning {
+        background-color: rgb(240, 240, 240);
+        padding: 2rem 1rem;
+    }
+
+    #learning h1 {
+        padding-bottom: 1rem;;
+    }
+
+    #courses {
+        display: block;
+    }
+
+    #courses article {
+        margin: 0.5rem 0;
+    }
+
+    #courses figure {
+        display: none;
+    }
+
+    #courses p {
+        display: none;
+    }
+    #courses div.text {
+        background-color: rgb(211, 211, 211);
+    }
+    
 }
