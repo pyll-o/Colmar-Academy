@@ -1,3 +1,4 @@
+/*Elements*/
 * {
   box-sizing: border-box;
   scroll-padding-top: 4rem;
@@ -68,6 +69,7 @@ video {
   width: 100%;
 }
 
+/*Classes*/
 .img-container {
   background-size: cover;
   height: 2rem;
@@ -115,6 +117,7 @@ video {
   font-size: 1.125rem;
 }
 
+/*Header*/
 .large {
   display: flex;
   flex-flow: row nowrap;
@@ -186,6 +189,7 @@ video {
   background-image: url(../images/ic-login.svg);
 }
 
+/*Main section*/
 #banner {
   background-color: #d4d4d4;
   flex-flow: row nowrap;
@@ -316,6 +320,7 @@ video {
   align-items: center;
 }
 
+/*Footer*/
 footer {
   position: relative;
   display: flex;
@@ -337,6 +342,7 @@ footer ul a {
   color: #333333;
 }
 
+/*Media queries*/
 @media only screen and (max-width: 710px) {
   .large {
     display: none;

@@ -1,6 +1,6 @@
-//1. Variables//
+//1. Variables
 
-//Colours//
+//Colours
 
 $white: hsl(0, 0%, 100%);
 $light-grey: hsl(0, 0%, 94%);
@@ -9,20 +9,20 @@ $medium-grey: hsl(0, 0%, 50%);
 $dark-grey: hsl(0, 0%, 20%);
 $blue-ish: hsl(207, 47%, 58%);
 
-//Fonts//
+//Fonts
 
 $verdana: Verdana, sans-serif;
 $arial: Arial, Helvetica, sans-serif;
 $fira-sans: 'Fira Sans', sans-serif;
 
-//Properties//
+//Properties
 
 $row-sp: row nowrap, space-between, center;
 $row-end: row nowrap, flex-end, center;
 $row-spar: row nowrap, space-around, center;
 
 
-//2. Mixins//
+//2. Mixins
 
 @mixin flex($flow, $justify, $align) {
     display: flex;
@@ -31,9 +31,9 @@ $row-spar: row nowrap, space-around, center;
     align-items: $align;
 }
 
-//3. Elements and classes//
+//3. Elements and classes
 
-//Elements//
+/*Elements*/
 
 
 * {
@@ -106,7 +106,7 @@ video {
     width: 100%;
 }
 
-//Classes//
+/*Classes*/
 
 .img-container {
     background-size: cover;
@@ -165,9 +165,9 @@ video {
     }    
 }
 
-//5. Nested site structures//
+//5. Nested site structures
 
-//Header//
+/*Header*/
 
 .large {
     @include flex($row-sp...);
@@ -245,7 +245,7 @@ video {
     }
 }
 
-//Main section//
+/*Main section*/
 
 #banner {
     background-color: $some-grey;
@@ -415,7 +415,7 @@ video {
     }
 }
 
-//Footer//
+/*Footer*/
 
 footer {
     position: relative;
@@ -441,7 +441,7 @@ footer {
     }
 }
 
-//6. Media queries//
+/*Media queries*/
 
 @media only screen and (max-width: 710px) {
     .large {
